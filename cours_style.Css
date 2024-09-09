@@ -1,0 +1,61 @@
+h1 {
+    color: red;
+}
+h2 {
+    color: #476b15;
+    /* Ici on souligne */
+    text-decoration: underline;
+    /* Ici on souligne avec des vaguelettes */
+    text-decoration-style: wavy;
+}
+
+.mauve {
+    color: #d151e5;
+}
+.gros {
+    font-size: 3em;
+    border: 2px solid salmon;
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+}
+label, input { 
+    display: block;
+
+}
+
+    /* Cela permet de centrer les labels et les input dans le formulaire */
+.form label, .form input {
+    width: 30%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form input[type="submit"] {
+    margin-top: 1em;
+}
+
+#jaune {
+    color: #deaf15;
+}
+
+#bleu {
+    color: blue;
+}
+
+    /* Les priorités
+    nom de l'élément: exemple: li, input, label..
+    <
+    les classes: .mauve, .gros ...
+    <
+    les id: jaune, #super-gros-h1
+    < 
+    la propriété style dans la balise
+     */
+
+     .rond{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        border-radius: 50%;
+     }

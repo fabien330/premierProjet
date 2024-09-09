@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire exo </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <form> 
+      <fieldset> <legend>Votre identité</legend>
+        
+        <ol><li><label for="nom">Nom</label>
+        <input type="text" name="nom" placeholder="prénom et nom"></li> 
+        
+        <li><label for="eMail">Email</label>
+        <input type="text" name="mail" placeholder="exemple@gmail.com"></li>
+        
+        <li><label for="téléphone">Téléphone</label>
+        <input type="text" name="numéro" placeholder="téléphone"></li>
+        </ol></fieldset>
+
+      <fieldset> <legend>Adresse de livraison</legend>
+        
+        <ol><li><label for="adresse">Adresse</label>
+            <input type="text" name="Adresse"></li>
+        
+        <li> <label for="code postal">Code postal</label>
+            <input type="text" name="code postale"></li>
+
+        <li> <label for="pays">Pays</label>
+            <input type="text" name="pays"></li>
+        </ol></fieldset>
+
+        <fieldset> <legend> informations cb</legend>
+        <ol>
+            <li>  <label for="select">type de carte bancaire</label>
+            <select name="select">
+                 <option value="visa">Visa</option>
+                 <option value="amex">Am ex</option>
+                 <option value="mastercard">Mastercard</option>
+            </select>   
+            </li>
+
+            <li><label for="n.carte">Numéro carte</label>
+            <input type="text" name="n.carte"></li>
+
+
+            <li><label for="code sécu">Code sécu.</label>
+                <input type="text" name="code. sécu"></li>
+
+            <li><label for="nom du porteur">Nom du porteur.</label>
+            <input type="text" name="nom du porteur" placeholder="mếme que sur la carte"></li>
+          </ol></fieldset>
+
+
+    </form>
+    
+</body>
+</html>

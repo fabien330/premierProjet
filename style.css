@@ -11,3 +11,25 @@ table {
     border-collapse: collapse;
 }
 *{background-color: rgb(105, 105, 105);}
+label, input {
+    display: block;
+}
+
+label {
+     margin-top: 15px;
+}
+/* Voici un exemple de selecteur  */
+
+input[type="checkbox"], 
+input[type="checkbox"] + label,
+input[type="radio"], 
+input[type="radio"] + label 
+{
+    display: inline; 
+    margin-top: 15px;
+}
+    /* on cible les labels et les inputs dans un li */
+ li input, li label { 
+     display: inline;
+    }
+    

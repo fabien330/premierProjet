@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <form>
+
+ <!-- Les Inputs -->
+ <!-- Les inputs text permettent d'écrire du texte cours -->
+ <!-- Pour l'accessibilité, la propriété for du label doit être TOUJOURS lié avec son input dans la propriété name -->
+   
+<fieldset> 
+    <legend> mes trois premier input</legend>
+   
+    <label for="premier">Mon premier input</label>
+    <input type="text" name="premier" placeholder="Ecrivez du texte"> 
+ <!-- la propriété step permet l'incrémentation comme ci dessous de 5 en 5  -->
+    
+    <label for="number">Mon input number</label>
+    <input type="number" name="number" min="5" max="100" step="5"> 
+
+    <label for="secret">Mon input secret</label>
+    <input type="password" name="secret" minlength="5" placeholder="Ecrivez votre mot de passe"> 
+
+
+</fieldset>
+   
+
+    <label for="date">Ma date</label>
+    <input type="date" name="date">
+
+    <label for="range">Mon input range</label>
+    <input type="range" name="range">
+ 
+ <!-- Les couleurs retournées avec cet input sont héxadécimales -->
+ 
+    <label for=" color">Mon input color</label>
+    <input type="color" name="color">
+
+    <input type="checkbox" name="check">
+    <label for="check">3 roues</label>
+
+ <!--  Permet un seul choix mais le name doit être le même -->
+
+    <div>
+
+     <input type="radio" name="radio" value="homme">
+     <label for="radio">homme</label>
+     <input type="radio" name="radio" value="femme">
+     <label for="radio">femme</label>
+    
+    </div>
+
+    <label for="mylife">raconte ta life</label>
+    <textarea name="my life" cols="30" rows="20" placeholder="raconte ta vie"></textarea>
+
+    <label for="select">ma selection de bagnole</label>
+    <select name="select">
+         <option value="dacia">Dacia</option>
+         <option value="lada">Lada</option>
+         <option value="merco">Merco</option>
+         <option value="multipla">Multipla</option>
+
+ <!-- Permet la validation du formulaire -->
+
+    <input type="submit" value="Valider">
+
+ </form>
+
+</body>
+</html>
