@@ -59,3 +59,10 @@ label, input {
         background-color: pink;
         border-radius: 50%;
      }
+
+
+    /* Avec cette pseudo-class (nth) on colorie le fond de tous les 2 tr (2n = tous les 2 en 2) */
+
+    tr:nth-child(2n){
+    background-color: rgb(184, 183, 182);
+     }
