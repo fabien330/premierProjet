@@ -6,6 +6,13 @@
     <title>Javascript</title>
 </head>
 <body>
+
+
+    <h1 id="personne">Jean-michel</h1>
+
+
+
+
     <script>
         //Commentaire en Javascript 
         /*
@@ -106,9 +113,102 @@
 
         }
 
+        // JS avec des maths
+
+        // addition
+        let addition = 1 + 1; // 2
+        let soustraction = 4 - 3; //1
+        let multiplication = 4 * 3; //12
+        let division = 8 / 2; //4
+        let modulo = 9 % 4; //1
+        
+        // puissance 
+        let puissance = 2**4; //16 '2puissance4'
+        let power = Math.pow(2, 4); //16 
+        let rand = Math.random(); //génère aléatoirement un chiffre entre 0 et un chiffre <1
+
+        //génère un chiffre en 0 et 99,999 puis
+        let cent =  Math.random() * 100
+        //l'arrondie pour arriver à 99
+        cent = Math.floor(Math.random() * 100)
+        //Math.floor(0,448 * 100)
+        //Math.floor(44,8)
+        //Math.floor arrondie à l'unité en dessous
+        //44 
+
+        //LES BOUCLES
+
+           //exemple de boucle simple de type for 
+
+           for(i =0; i < 5001; i++) {
+            console.log(i * 2)
+           } 
+
+           //Que se passe-til ?
+           /*
+           La boucle commence avec un compteur "i" qui commence par 0.
+           La boucle s'arretera quand "i" aura atteint 5000.
+           Avec "i++" la boucle à chaque tour de boucle i augmente de 1 dans le console log i est multiplié par 2, 5000 fois 
+           */
+ 
+           for (let index = 0; index < panier.length; index++) {
+            console.log(panier[index]) 
+           }
+
+            let bagnole = ["Mazda", "Lada", "Audi", "Chrysler", "Volkswagen"]
+
+            for (fruit of bagnole) {
+                console.log(fruit)              
+            } 
+
+            //FONCTIONS 
+
+            function multiplispardeux (nbr){
+                console.log(nbr * 2)
+            }
+
+            multiplispardeux(70)
+            multiplispardeux(98)
+            multiplispardeux(83.92)
 
 
+            //Concatenation
 
+            let p = "coucou" + " c'est nous.";
+            console.log(p)
+
+            let k = " j'ai " + 5 + " chiens ";
+            console.log(k)
+
+            //À ne pas faire !
+            let u = "10" + 4; //104 cause des erreurs dans le code
+            console.log(u)
+
+            let v = 45
+            console.log("j'ai " + v + " enfants ")
+
+            //Les littéraux
+
+            console.log(`J'ai ${v} enfants`)
+
+            //if écriture ternaire 
+
+            let bb = 23
+
+            //On vérifie que bb est supérieur à 18
+            //Si c'est vraie il fera les instructions après le ?
+            //Si  c'est faux il fera les instructions après le:
+
+            bb > 18 ? console.log("tu es majeur") : console.log ("on verra ça quand tu seras grand")
+
+            //L'opérateur de coalescence des nuls
+            //L'opérateur de coalescence des nuls, permet de donner une valeur
+            //parmi plusieurs valeurs dans un certaine ordre, et prendra la première valeur non'null ou la première valeur définie
+            let lo = null 
+            let la = null
+            let le = 54
+
+            let lu = lo ?? la ?? le//LU = 54
 
 
     </script>
