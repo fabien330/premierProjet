@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <!-- On donne un ID à l'input et au bouton pour le récupérer dans le JS -->
+    <input id="nbr" type="number"> 
+    <button id="btn">Valider</button> 
+    <button id="btn2">pileOuFace</button>
+
+     <script>
+       
+
+        //quand je click sur le bouton
+        // On fait une constante pour chaque élément grace à leur ID
+    const nbr = document.getElementById("nbr")
+    const btn = document.getElementById("btn")
+    const btn2 = document.getElementById("btn2")
+       
+        //ça lance le calcul (multiplication) du chiffre de l'input de 0 à 10
+        // On vérifie le click
+    btn.addEventListener("click", function(){
+        //On fait une boucle de 1 à 10
+    for (i =1; i<=10 ;i++) {
+
+        //On multiplie la valeur de l'input par la valeur de notre boucle (i)
+        console.log (`${nbr.value} fois $(i) est égale à ${nbr.value*i}`)
+   
+    }}) 
+
+    /* symboles de "vérifications"
+
+        On vérifie l'égalité sans la vérification de type de a à b
+       // a == b 
+
+       on vérifie que a est supérieur à b
+       a > b
+
+       in vérifie que a est supérieur ou égal à b
+       a <= b
+
+       on vérifie que a est inférieur à b
+       a < b 
+
+       on vérifie que a est inférieur ou égale à b
+       a <= b 
+
+       on vérifie que a n'est pa égal à b
+       a != b 
+
+       on vérifie que a est strictement égal à b
+       lors de cette vérification on vérifie le type
+       a === b 
+
+    */
+ 
+
+    // Pile ou face 
+    // on ajoute un bouton et ça affiche aléatoirement pile ou face.
+    //dans un console.log
+
+    btn2.addEventListener ("click", function(){
+        let pileOuFace = Math.random() >0.5 ? "pile" : "face"
+        console.log (pileOuFace)
+    })
+
+
+     </script>
+
+
+    
+</body>
+</html>
